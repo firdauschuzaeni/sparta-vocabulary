@@ -55,7 +55,7 @@ def detail(keyword):
     if not definitions:
         return redirect(url_for(
             'error',
-            msg=f'tidak dapat menemukan kata {keyword}'
+            word=keyword
         ))
 
     if type (definitions[0]) is str:
